@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding:0 ;
+box-sizing: border-box;
+}
+body{
+    background-color: #e9d9c0;
+}
+.card{
+   display: flex;
+   flex-direction: column ;
+   justify-content: center;
+   align-items: center;
+    height: 600px;
+}
