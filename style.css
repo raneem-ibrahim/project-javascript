@@ -7,7 +7,9 @@ body{
     background-color: #e9d9c0;
 }
 .card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   flex-direction: column ;
+   justify-content: center;
+   align-items: center;
+    height: 600px;
 }
