@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management System - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="max-width-container">
+        <div class="header flex items-center">
+          <h1 class="title">My Tasks</h1>
+          <div class="search-bar-container">
+            <input
+              id="search-input"
+              type="text"
+              class="input white-background"
+              placeholder="Search tasks by name"
+            />
+          </div>
+          <div class="buttons-container">
+            <div class="sorting-buttons">
+              <button
+                id="sort-by-date"
+                class="button regular-button blue-background"
+              >
+                Sort by Date
+              </button>
+              <button
+                id="sort-by-az"
+                class="button regular-button pink-background"
+              >
+                Sort A-Z
+              </button>
+            </div>
+            <button
+              id="add-task-cta"
+              class="button regular-button blue-background"
+            >
+              Add Project
+            </button>
+            <a href="login.html">
+              <button class="sign-out-cta">Sign Out</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="tasks-container" class="max-width-container list-view"></div>
+      <div id="set-task-overlay" class="overlay set-task-overlay hide">
+        <div class="overlay-content pink-background">
+          <button
+            class="button circle-button blue-background flex justify-center items-center close-button"
+          >
+            <iconify-icon
+              icon="material-symbols:close-rounded"
+              style="color: black"
+              width="26"
+              height="26"
+            ></iconify-icon>
+          </button>
+          <h1 class="header">Add Project</h1>
+          <form id="add-task-form" class="form" autocomplete="off">
+            <label for="name" class="label">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input white-background"
+              required
+            />
+            <label for="description" class="label">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              rows="8"
+              class="textarea-input white-background"
+              required
+            ></textarea>
+            <label for="due-date" class="label">Due Date</label>
+            <input
+              type="date"
+              name="due-date"
+              id="due-date"
+              class="input white-background"
+              required
+            />
+            <div class="text-center">
+              <button
+                type="submit"
+                class="button regular-button green-background cta-button"
+              >
+                Save Task
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

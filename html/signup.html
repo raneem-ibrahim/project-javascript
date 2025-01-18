@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/entry-page.css" />
+  </head>
+  <body>
+    <div class="row height-full">
+      <div class="left-column flex flex-column items-center justify-center height-full">
+        <h1 class="welcoming-title">Hello</h1>
+        <form class="form" autocomplete="off">
+          <label for="fname" class="label">First Name</label>
+          <input type="text" id="fname" name="fname" class="input" />
+          <span id="errorfname"></span>
+
+          <label for="lname" class="label">Last Name</label>
+          <input type="text" id="lname" name="lname" class="input" />
+          <span id="errorlname"></span>
+
+          <label for="email" class="label">Email</label>
+          <input type="text" id="email" name="email" class="input" />
+          <span id="erroremail"></span>
+
+          <label for="password" class="label">Password</label>
+          <input type="password" id="password" name="password" class="input" />
+          <span id="errorpassword"></span>
+
+          <label for="cpassword" class="label">Confirm Password</label>
+          <input
+            type="password"
+            id="cpassword"
+            name="cpassword"
+            class="input"
+          />
+          <span id="errorcpassword"></span>
+
+          <button type="button" class="button regular-button pink-background cta-btn">Sign up</button>
+        </form>
+        <p class="login-prompt">
+          Already have an account?
+          <a href="./login.html" class="log-in-link">Log in</a>
+        </p>
+      </div>
+      <div class="right-column"></div>
+    </div>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
